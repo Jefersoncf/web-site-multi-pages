@@ -597,17 +597,13 @@ section {
 }
 
 .products .box-container .box {
-  padding: 2rem;
   border: 0.2rem solid #333;
   text-align: center;
   background: #fff;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   border-radius: .5rem;
-}
-
-.products .box-container .box:hover .image {
-  display: inline-block;
+  overflow: hidden;
 }
 
 .products .box-container .box:hover .image .hover-img {
@@ -618,12 +614,16 @@ section {
   display: none;
 }
 
+.products .box-container .box:hover .image .icons {
+  left: 1rem;
+}
+
 .products .box-container .box .image {
   position: relative;
 }
 
 .products .box-container .box .image img {
-  height: 25rem;
+  height: 30rem;
   -webkit-animation: fadeIn .2s linear;
           animation: fadeIn .2s linear;
 }
@@ -634,8 +634,8 @@ section {
 
 .products .box-container .box .image .icons {
   position: absolute;
-  top: 1rem;
-  left: 2rem;
+  top: 0;
+  left: -7rem;
 }
 
 .products .box-container .box .image .icons a {
@@ -644,7 +644,7 @@ section {
   height: 4.5rem;
   width: 4.5rem;
   line-height: 4.5rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
   border-radius: 50%;
   color: #fff;
   background: #333;
@@ -652,6 +652,197 @@ section {
 
 .products .box-container .box .image .icons a:hover {
   background: #0984e3;
+}
+
+.products .box-container .box .content {
+  padding: 2rem;
+}
+
+.products .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.products .box-container .box .content .price {
+  font-size: 2.2rem;
+  color: #0984e3;
+  padding-bottom: .7rem;
+  padding-top: .5rem;
+}
+
+.products .box-container .box .content .price span {
+  color: #666;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+.products .box-container .box .content .stars i {
+  font-size: 1.7rem;
+  color: gold;
+}
+
+.product-banner .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.product-banner .box-container .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+  position: relative;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: .5rem;
+  border: 0.2rem solid #333;
+  overflow: hidden;
+  height: 30rem;
+}
+
+.product-banner .box-container .box:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.product-banner .box-container .box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product-banner .box-container .box .content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.product-banner .box-container .box .content span {
+  font-size: 1.7rem;
+  color: #0984e3;
+}
+
+.product-banner .box-container .box .content h3 {
+  padding-top: .5rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.info-container .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+
+.info-container .box-container .box {
+  background: #fff;
+  border-radius: .5rem;
+  text-align: center;
+  padding: 2rem;
+  border: 0.2rem solid #333;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.info-container .box-container .box i {
+  height: 7.5rem;
+  width: 7.5rem;
+  line-height: 7.5rem;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  margin-bottom: .5rem;
+  background: #0984e3;
+  color: #fff;
+}
+
+.info-container .box-container .box h3 {
+  font-size: 2rem;
+  padding: .5rem 0;
+  color: #333;
+}
+
+.info-container .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+}
+
+.contact form h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #333;
+  padding-bottom: 1rem;
+}
+
+.contact form p {
+  font-size: 1.5rem;
+  color: #666;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.contact form .inputBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact form .inputBox input {
+  width: 49%;
+}
+
+.contact form .inputBox input, .contact form textarea {
+  padding: 1.2rem 1.4rem;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border: 0.2rem solid #333;
+  background: #fff;
+  text-transform: none;
+  color: #666;
+  font-size: 1.5rem;
+  margin: .7rem 0;
+}
+
+.contact form textarea {
+  height: 15rem;
+  resize: none;
+  width: 100%;
+}
+
+.contact .map {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+  width: 100%;
 }
 
 .quick-links {

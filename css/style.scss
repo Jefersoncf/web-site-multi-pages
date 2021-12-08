@@ -561,7 +561,6 @@ section {
         @include grid(31rem);
 
         .box {
-            // padding: 2rem; 
             border: $border;
             text-align: center;
             background: $white;
@@ -570,7 +569,6 @@ section {
             overflow: hidden;
 
             &:hover .image {
-                display: inline-block;
 
                 .hover-img {
                     display: inline-block;
@@ -589,7 +587,7 @@ section {
                 position: relative;
 
                 img {
-                    height: 25rem;
+                    height: 30rem;
                     animation: fadeIn .2s linear;
                 }
 
@@ -635,7 +633,7 @@ section {
                     padding-top: .5rem;
 
                     span {
-                        color: $white-color;
+                        color: $light-color;
                         font-size: 1.5rem;
                         text-decoration: line-through;
                     }
@@ -723,7 +721,76 @@ section {
                 background: $blue;
                 color: $white;
             }
+
+            h3 {
+                font-size: 2rem;
+                padding: .5rem 0;
+                color: $black;
+            }
+
+            p {
+                font-size: 1.5rem;
+                line-height: 2;
+                color: $light-color;
+            }
         }
+    }
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    form {
+        flex: 1 1 42rem;
+
+        h3 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: $black;
+            padding-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: $light-color;
+            padding: 1rem 0;
+            line-height: 2;
+        }
+
+        .inputBox {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            input {
+                width: 49%;
+            }
+        }
+
+        .inputBox input, textarea {
+            padding: 1.2rem 1.4rem;
+            border-radius: .5rem;
+            box-shadow: $box-shadow;
+            border: $border;
+            background: $white;
+            text-transform: none;
+            color: $light-color;
+            font-size: 1.5rem;
+            margin: .7rem 0;
+        }
+
+        textarea {
+            height: 15rem;
+            resize: none;
+            width: 100%;
+        }
+    }
+
+    .map {
+        flex: 1 1 42rem;
+        width: 100%;
     }
 }
 
