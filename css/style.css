@@ -1266,5 +1266,11 @@ section {
   .content form .inputBox input {
     width: 100%;
   }
+  .shopping-cart .cart-total {
+    text-align: center;
+  }
+  .shopping-cart .cart-total .btn {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

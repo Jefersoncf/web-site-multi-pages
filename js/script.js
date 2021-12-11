@@ -9,7 +9,6 @@ document.querySelector('#close-side-bar').onclick = () => {
     sideBar.classList.remove('active');
 }
 
-
 let searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () => {
@@ -26,7 +25,6 @@ document.querySelectorAll('.accordion-container .accordion').forEach(accordion =
         accordion.classList.toggle('active');
     }
 });
-
 
 var swiper = new Swiper('.home-slider', {
     loop: true,

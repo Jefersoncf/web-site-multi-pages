@@ -1002,20 +1002,6 @@ section {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .quick-links {
     display: flex;
     align-items: center;
@@ -1081,25 +1067,6 @@ section {
         filter: drop-shadow(0 0 .1rem $black);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1200px) {
 
@@ -1239,5 +1206,13 @@ section {
 
     .content form .inputBox input {
         width: 100%;
+    }
+
+    .shopping-cart .cart-total {
+        text-align: center;
+
+        .btn {
+            width: 100%;
+        }
     }
 }
